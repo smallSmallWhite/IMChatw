@@ -15,6 +15,13 @@
 		8454E0201E397BD500135171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454E01E1E397BD500135171 /* LaunchScreen.storyboard */; };
 		8454E02B1E397BD500135171 /* IMChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454E02A1E397BD500135171 /* IMChatTests.m */; };
 		8454E0361E397BD500135171 /* IMChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454E0351E397BD500135171 /* IMChatUITests.m */; };
+		8454E0451E3982C800135171 /* MPConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454E0441E3982C800135171 /* MPConfig.m */; };
+		8454E04C1E3988F000135171 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454E04A1E3988F000135171 /* LoginViewController.m */; };
+		8454E04D1E3988F000135171 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8454E04B1E3988F000135171 /* LoginViewController.xib */; };
+		8454E0521E39892600135171 /* RrgisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454E0501E39892600135171 /* RrgisterViewController.m */; };
+		8454E0531E39892600135171 /* RrgisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8454E0511E39892600135171 /* RrgisterViewController.xib */; };
+		8454E0561E39975F00135171 /* MPConfigDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454E0551E39975F00135171 /* MPConfigDelegate.m */; };
+		EAB7F7879E2420B296103C26 /* libPods-IMChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5166EC4E15022D6A22EEBEAA /* libPods-IMChat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5166EC4E15022D6A22EEBEAA /* libPods-IMChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IMChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A1FEAD55419A7F749CE57B /* Pods-IMChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMChat/Pods-IMChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8454E00D1E397BD500135171 /* IMChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8454E0111E397BD500135171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8454E0131E397BD500135171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,17 @@
 		8454E0311E397BD500135171 /* IMChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8454E0351E397BD500135171 /* IMChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMChatUITests.m; sourceTree = "<group>"; };
 		8454E0371E397BD500135171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8454E0431E3982C800135171 /* MPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPConfig.h; path = IMChat/MPConfig.h; sourceTree = "<group>"; };
+		8454E0441E3982C800135171 /* MPConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPConfig.m; path = IMChat/MPConfig.m; sourceTree = "<group>"; };
+		8454E0491E3988F000135171 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8454E04A1E3988F000135171 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8454E04B1E3988F000135171 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8454E04F1E39892600135171 /* RrgisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RrgisterViewController.h; sourceTree = "<group>"; };
+		8454E0501E39892600135171 /* RrgisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RrgisterViewController.m; sourceTree = "<group>"; };
+		8454E0511E39892600135171 /* RrgisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RrgisterViewController.xib; sourceTree = "<group>"; };
+		8454E0541E39975F00135171 /* MPConfigDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConfigDelegate.h; sourceTree = "<group>"; };
+		8454E0551E39975F00135171 /* MPConfigDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPConfigDelegate.m; sourceTree = "<group>"; };
+		C6402ED2E2DC72069829DD91 /* Pods-IMChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMChat/Pods-IMChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB7F7879E2420B296103C26 /* libPods-IMChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +99,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0BE223286E62E98B578BA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5166EC4E15022D6A22EEBEAA /* libPods-IMChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		327F8E63B9923AB996E56FC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71A1FEAD55419A7F749CE57B /* Pods-IMChat.debug.xcconfig */,
+				C6402ED2E2DC72069829DD91 /* Pods-IMChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8454E0041E397BD500135171 = {
 			isa = PBXGroup;
 			children = (
+				8454E0481E3988BD00135171 /* register */,
+				8454E0471E3988B200135171 /* login */,
+				8454E0461E3982D200135171 /* public */,
 				8454E00F1E397BD500135171 /* IMChat */,
 				8454E0291E397BD500135171 /* IMChatTests */,
 				8454E0341E397BD500135171 /* IMChatUITests */,
 				8454E00E1E397BD500135171 /* Products */,
+				327F8E63B9923AB996E56FC0 /* Pods */,
+				1C0BE223286E62E98B578BA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +183,37 @@
 			path = IMChatUITests;
 			sourceTree = "<group>";
 		};
+		8454E0461E3982D200135171 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				8454E0431E3982C800135171 /* MPConfig.h */,
+				8454E0441E3982C800135171 /* MPConfig.m */,
+				8454E0541E39975F00135171 /* MPConfigDelegate.h */,
+				8454E0551E39975F00135171 /* MPConfigDelegate.m */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		8454E0471E3988B200135171 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				8454E0491E3988F000135171 /* LoginViewController.h */,
+				8454E04A1E3988F000135171 /* LoginViewController.m */,
+				8454E04B1E3988F000135171 /* LoginViewController.xib */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		8454E0481E3988BD00135171 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				8454E04F1E39892600135171 /* RrgisterViewController.h */,
+				8454E0501E39892600135171 /* RrgisterViewController.m */,
+				8454E0511E39892600135171 /* RrgisterViewController.xib */,
+			);
+			name = register;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8454E03A1E397BD500135171 /* Build configuration list for PBXNativeTarget "IMChat" */;
 			buildPhases = (
+				197F8A2230FEBA2568A996E1 /* [CP] Check Pods Manifest.lock */,
 				8454E0091E397BD500135171 /* Sources */,
 				8454E00A1E397BD500135171 /* Frameworks */,
 				8454E00B1E397BD500135171 /* Resources */,
+				469FC520B7764702B7A3AA71 /* [CP] Embed Pods Frameworks */,
+				96C44C7A51917A1B99159A1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,7 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8454E04D1E3988F000135171 /* LoginViewController.xib in Resources */,
 				8454E0201E397BD500135171 /* LaunchScreen.storyboard in Resources */,
+				8454E0531E39892600135171 /* RrgisterViewController.xib in Resources */,
 				8454E01D1E397BD500135171 /* Assets.xcassets in Resources */,
 				8454E01B1E397BD500135171 /* Main.storyboard in Resources */,
 			);
@@ -268,14 +347,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		197F8A2230FEBA2568A996E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		469FC520B7764702B7A3AA71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMChat/Pods-IMChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96C44C7A51917A1B99159A1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMChat/Pods-IMChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8454E0091E397BD500135171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8454E0561E39975F00135171 /* MPConfigDelegate.m in Sources */,
+				8454E0451E3982C800135171 /* MPConfig.m in Sources */,
 				8454E0181E397BD500135171 /* ViewController.m in Sources */,
 				8454E0151E397BD500135171 /* AppDelegate.m in Sources */,
 				8454E0121E397BD500135171 /* main.m in Sources */,
+				8454E0521E39892600135171 /* RrgisterViewController.m in Sources */,
+				8454E04C1E3988F000135171 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +553,7 @@
 		};
 		8454E03B1E397BD500135171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A1FEAD55419A7F749CE57B /* Pods-IMChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IMChat/Info.plist;
@@ -433,6 +565,7 @@
 		};
 		8454E03C1E397BD500135171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6402ED2E2DC72069829DD91 /* Pods-IMChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IMChat/Info.plist;
@@ -507,6 +640,7 @@
 				8454E03C1E397BD500135171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8454E03D1E397BD500135171 /* Build configuration list for PBXNativeTarget "IMChatTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +649,7 @@
 				8454E03F1E397BD500135171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8454E0401E397BD500135171 /* Build configuration list for PBXNativeTarget "IMChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +658,7 @@
 				8454E0421E397BD500135171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

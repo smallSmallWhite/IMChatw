@@ -7,17 +7,48 @@
 //
 
 #import "AppDelegate.h"
-
+#import <NIMSDK.h>
+#import "MPConfig.h"
+#import <NIMSDKConfig.h>
 @interface AppDelegate ()
-
+@property (nonatomic,weak) id configDelegate;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //在注册 NIMSDK appKey 之前先进行配置信息的注册，如是否使用新路径,是否要忽略某些通知，是否需要多端同步未读数
+    self.configDelegate = [[NIMSDKConfigDelegate alloc] init];
+    [self registerAppkey];
+    [self registerAPNS];
+    
     return YES;
+}
+#pragma mark  注册appkey 注册证书
+- (void)registerAppkey
+{
+    [[NIMSDK sharedSDK] registerWithAppID:[MPConfig sharedManager].appKey cerName:[MPConfig sharedManager].cerName];
+}
+#pragma mark  注册APNS
+- (void)registerAPNS{
+    
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerForRemoteNotifications)])
+    {
+        UIUserNotificationType types = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound |      UIRemoteNotificationTypeAlert;
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types
+                                                                                 categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+    else
+    {
+        UIRemoteNotificationType types = UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound |        UIRemoteNotificationTypeBadge;
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:types];
+    }
+    
+    
 }
 
 
